@@ -1,5 +1,8 @@
 ---
 layout: default
+site_repositories:
+  - frame-geometry-comparator
+  - cycle-route-planner
 ---
 
 
@@ -12,12 +15,7 @@ Projects
     {{ repository.description }}
 {% endfor %}
 
-{% assign site_repositories = ["frame-geometry-comparator","cycle-route-planner"] %}
-{% if site_repositories contains "frame-geometry-comparator" %}
+{% if page.site_repositories contains "frame-geometry-comparator" %}
 test
 {% endif %}
 
-{% assign arr = [1,2,3] %}
-{% if arr contains 2 %}
-test arr
-{% endif %}
