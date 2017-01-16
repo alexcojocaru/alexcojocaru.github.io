@@ -16,3 +16,8 @@ Projects
 {% if site_repositories contains "frame-geometry-comparator" %}
 test
 {% endif %}
+
+{% assign arr = [1,2,3] %}
+{% if arr contains 2 %}
+test arr
+{% endif %}
