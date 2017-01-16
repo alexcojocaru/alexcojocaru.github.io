@@ -16,12 +16,12 @@ Projects
 <p>{{ site.github.owner_name }}</p>
 <p>{{ site.github.owner_url }}</p>
 <p>{{ site.github.repository_name }}</p>
-<p>{{ site.github.url }}</p>
+<p></p>
 <ul>
 {% for repository in repositories %}
   {% if page.site_repositories contains repository.name %}
     <li>
-		<a href="{{ repository.html_url }}">{{ repository.name }}</a>
+		<a href="{{ site.github.url }}/{{ repository.name }}">{{ repository.name }}</a>
 		<br />
 		{{ repository.description }}
 	</li>
