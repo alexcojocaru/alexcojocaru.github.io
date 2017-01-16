@@ -11,11 +11,9 @@ Projects
 
 {% assign repositories = (site.github.public_repositories | sort: "pushed_at") | reverse %}
 {% for repository in repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})  
-    {{ repository.description }}
+  {% if page.site_repositories contains repository.name %}
+    * [{{ repository.name }}]({{ repository.html_url }})  
+      {{ repository.description }}
+  {% endif %}
 {% endfor %}
-
-{% if page.site_repositories contains "frame-geometry-comparator" %}
-test
-{% endif %}
 
