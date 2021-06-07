@@ -1,6 +1,7 @@
 ---
 layout: default
 site_repositories:
+  - elevation-profile
   - frame-geometry-comparator
   - cycle-route-planner
 ---
